@@ -1,7 +1,5 @@
 
 var azure = require('azure-storage');
-
-
 var http = require('http');
 
 var connectionString='DefaultEndpointsProtocol=https;AccountName=dinistorage;AccountKey=5xs76p+fMf2RaeYKGKtHki5lNxMGcwgEqZ4a8T9CSStAt9fe+krH6oqKNZTqjsbVTQgsG9iUgLl3syTBjxU8PQ==;';
