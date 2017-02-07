@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "azure-storage": "^2.0.0",
-    "express": "^4.14.1"
+    "azure-storage": "^2.0.0"
   }
 }
