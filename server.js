@@ -23,6 +23,6 @@ app.post('/', function(req,res) {
 });
 
 app.get('/', function(req,res) {
-    res.send('Api working');
+    res.send('Api working!');
 });
 app.listen(process.env.PORT || 3000);
