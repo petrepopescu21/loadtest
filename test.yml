@@ -1,5 +1,5 @@
 config:
-  target: 'http://localhost:3000'
+  target: 'https://copperfront.herokuapp.com/'
   phases:
     - duration: 60
       arrivalRate: 5000
@@ -9,5 +9,5 @@ config:
 
 scenarios:
   - flow:
-    - post:
+    - get:
         url: "/"
