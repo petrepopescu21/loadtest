@@ -2,7 +2,7 @@
 
 
 var throng = require('throng');
-var WORKERS = 30;
+var WORKERS = 7;
 throng({
   start: start,
   workers: WORKERS,
@@ -23,4 +23,8 @@ function start(id) {
 
 
 
-
+function createHtml(url) {
+    $.get(url, function(data) {
+        return data;
+    });
+} 
