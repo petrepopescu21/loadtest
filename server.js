@@ -1,6 +1,6 @@
 
 
-
+process.chdir(path.join(process.cwd(), '..'));
 var throng = require('throng');
 var WORKERS = 7;
 throng({
