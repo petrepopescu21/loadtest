@@ -2,7 +2,7 @@
 
 
 var throng = require('throng');
-var WORKERS = process.env.WEB_CONCURRENCY || 4;
+var WORKERS = process.env.WEB_CONCURRENCY || 14;
 throng({
   start: start,
   workers: WORKERS,
