@@ -1,5 +1,5 @@
 var throng = require('throng');
-var WORKERS = process.env.WEB_CONCURRENCY || 16;
+var WORKERS = process.env.WEB_CONCURRENCY || 24;
 
 throng({
   start: start,
