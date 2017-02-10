@@ -13,5 +13,5 @@ function start(id) {
     http.createServer(function (req, res) {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.end('post received');
-    }).listen(process.env.PORT || 80);
+    }).listen(process.env.PORT || 3000);
 }
