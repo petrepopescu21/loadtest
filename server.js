@@ -1,8 +1,6 @@
-
-var path = require('path');
-process.chdir(path.join(process.cwd(), '..'));
 var throng = require('throng');
-var WORKERS = 7;
+var WORKERS = process.env.WEB_CONCURRENCY || 4;
+
 throng({
   start: start,
   workers: WORKERS,
@@ -13,18 +11,7 @@ function start(id) {
     var http = require('http');
     console.log('started worker');
     http.createServer(function (req, res) {
-
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.end('post received');
-
     }).listen(process.env.PORT || 3000);
 }
-
-
-
-
-function createHtml(url) {
-    $.get(url, function(data) {
-        return data;
-    });
-} 
